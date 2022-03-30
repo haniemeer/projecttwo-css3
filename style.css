@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+    font-family: arial;
+    overflow: hidden;
+    
+}
+.loader{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    text-transform: uppercase;
+    font-size: 10em;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, .1);
+    background-image: url(wave2.png);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animation 10s  linear infinite;
+}
+@keyframes animation{
+    0%{
+     background-position: left 0px top 120px;
+    }
+    40%{
+        background-position: left 800px top -20px;
+       }
+       
+       80%{
+        background-position: left 1000px top -50px;
+       }
+       100%{
+        background-position: left 1100px top 120px;
+       }
+}
